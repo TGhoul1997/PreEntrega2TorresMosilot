@@ -336,6 +336,11 @@ main section h2{
 /* ends animaciones */
 
 /* starts responsive */
+#contacto div{
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+}
 .div--position{
     grid-area: divNum;
 }
@@ -390,8 +395,5 @@ main section h2{
     "divH"
     "divB"
     "foot1";
-}
-#contacto div{
-    display: flex;
 }
 /* ends responsive
