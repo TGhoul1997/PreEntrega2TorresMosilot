@@ -299,15 +299,16 @@ main section h2{
 
 /* starts animaciones */
 @keyframes headerAnimation{
-    0%{background-image: url(../image/header.png)}
-    25%{background-image: url(../image/header_2.png)}
-    50%{background-image: url(../image/header_3.png)}
-    75%{background-image: url(../image/header_4.png)}
-    100%{background-image: url(../image/header_5.png)}
+    0%{background-image: url(../image/header_2.webp)}
+    25%{background-image: url(../image/header_2.webp)}
+    50%{background-image: url(../image/header_3.webp)}
+    75%{background-image: url(../image/header_4.webp)}
+    100%{background-image: url(../image/header_5.webp)}
 }
 .header--carrusel{
-    height: 40vh;
-    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    background-size: contain;
     animation-name: headerAnimation;
     animation-duration: 10s;
     animation-timing-function: linear;
