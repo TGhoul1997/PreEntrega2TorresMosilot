@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+/* starts comandos generales */
+h1{
+    font-size: 5rem;
+    margin: 20px;
+    color: #0424a4;
+}
+h2{
+    font-size: 4rem;
+    margin: 20px;
+}
+h3{
+    font-size: 2.5rem;
+}
+h4{
+    font-size: 1.8rem;
+}
+p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+nav{
+    background-color: #88bc04;
+	top: 0;
+	padding: 10px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 2rem;
+    margin: auto;
+}
+nav ul li a:hover{
+    color: white;
+    font-weight: 700;
+}
+main section h2{
+    color: #88bc04;
+}
+
+.main_description--color{
+    color: #88bc04;
+}
+.main_description--italic{
+    font-style: italic;
+}
+.main_description--center{
+    text-align: center;
+    margin: 10px;
+    padding: auto
+}
+.main_description--right{
+    text-align: right;
+}
+.main_description--justify{
+    text-align: justify;
+}
+.whatsapp_box--white{
+    background-color: aliceblue;
+    text-align: center;
+}
+.div_button--align{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 10px;
+}
+.encabezado_img--fluid{
+    width: 100%;
+}
+/* ends comandos generales */
+
+/* starts comandos categorias */
+.categorias_div--border{
+    border: solid;
+    border: double #000000 5px;
+    width: auto;
+    height: auto;
+    margin: 20px 100px;
+    padding: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.categorias_item--border{
+    border: solid;
+    border: dotted #0424a4 2px;
+    margin: 10px 5px 10px 5px;
+}
+.div_item--grow1{
+    flex-grow: 1;
+}
+.div_item--grow2{
+    flex-grow: 1;
+}
+.div_item--grow3{
+    flex-grow: 1;
+}
+.categorias_description--margin{
+    margin: 60px 50px;
+}
+/* ends comandos categorias */
+
+/* starts comandos pagina nosotros */
+.nosotros_description--bold{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3.5rem ;
+}
+.nosotros_img--center{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding: 30px 30px 30px 320px;
+}
+.nosotros_div--border{
+    border: solid #ffffff 3px;
+    margin: 20px 100px;
+}
+.nosotros_text--nojust{
+    margin: auto;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* ends Comandos nosotros */
+
+/* starts comandos asesoria */
+.asesoria_h2--margin{
+    margin-left: 100px;
+}
+.asesoria_div--background{
+    background-color: #88bc04;
+    margin: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.asesoria_img--size{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.asesoria_text--distance{
+    margin: 20px;
+}
+/* starts comandos asesoria */
+
+/* starts comandos servicios Varios */
+.servicios_h2--margin{
+    margin-left: 100px;
+}
+.servicios_div--background{
+    background-color: #88bc04;
+    margin: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.servicios_img--size{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin-left: 10px
+}
+.servicios_text--distance{
+    margin: 20px;
+}
+/* starts comandos servicio varios */
+
+/* stars comandos productos */
+#productos .box{
+	margin: 20px;
+	display: flex;
+	justify-content: space-evenly;
+}
+#productos .box figure{
+    text-align: center;
+}
+    #productos .box figure img{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        width: 200px;
+        height: 200px;
+    }
+
+    #productos .box figure figcaption{
+        font-size: 2.5rem;
+        color: #000000 ;
+        padding: 10px 0;
+        background-color: white;
+    }
+    #productos .box p.price{
+        color: #676565;
+        padding-bottom: 10px;
+        background-color: white;
+    }
+/* ends comandos Productos */
+
+/* stars comandos Novedades */
+.figcaption_text_size{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.novedades_div--background{
+    background-color: #88bc04;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+#novedades .box{
+	margin: 30px;
+	display: flex;
+	justify-content: space-evenly;
+}
+#novedades .box figure{
+    text-align: center;
+}
+#novedades .box figure img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+#novedadess .box figure figcaption{
+    font-size: 2.5rem;
+    color: #000000 ;
+    padding: 10px 0;
+    background-color: white;
+    }
+#novedades .box p.text{
+    color: #676565;
+    padding-bottom: 10px;
+    background-color: white;
+}
+/* ends comandos novedades */
+
+/* starts comandos contacto */
+#contacto .section{
+    margin: 30px;
+	display: flex;
+}
+
+#contacto article{
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+#contacto img{
+    width: 300px;
+    height: 200px;
+}
+#contacto h2{
+    border-color: #000000;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    border-start-start-radius: 10px;
+    border-end-end-radius: 10px;
+    margin-left: 0px;
+}
+#contacto h4{
+    margin-top: 30px;
+}
+/* ends comandos contacto */
+
+/* starts comandos generales footer */
+.footer{
+    margin: auto;
+    padding: 30px 30px 30px 1220px;
+}
+.footer_box--color{
+    background-color: #0424a4;
+}
+.footer_icon{
+    width: 30px;
+}
+/* ends comandos generales footer */
