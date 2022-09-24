@@ -48,9 +48,8 @@ nav ul li a{
     font-size: 2rem;
     margin: auto;
 }
-nav ul li a:hover{
-    color: white;
-    font-weight: 700;
+nav ul li ul{
+    display: none;
 }
 main section h2{
     color: #88bc04;
@@ -94,7 +93,6 @@ main section h2{
     border: double #000000 5px;
     width: auto;
     height: auto;
-    margin: 20px 100px;
     padding: auto;
     display: flex;
     justify-content: space-around;
@@ -103,7 +101,9 @@ main section h2{
 .categorias_item--border{
     border: solid;
     border: dotted #0424a4 2px;
-    margin: 10px 5px 10px 5px;
+    margin: 1em 0.5em;
+    width: 100%;
+    height: 50%;
 }
 .div_item--grow1{
     flex-grow: 1;
@@ -196,12 +196,11 @@ main section h2{
 }
 #productos .box figure{
     text-align: center;
+    width: 15%;
 }
     #productos .box figure img{
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        height: 50%;
     }
 
     #productos .box figure figcaption{
@@ -217,6 +216,18 @@ main section h2{
     }
 /* ends comandos Productos */
 
+/* ends comandos segunda nav */
+.secondnav{
+	background-color: white;
+	padding: 10px 30px ;
+	font-size: 1.3rem;
+	line-height: 1.6em;
+}
+.secondnav a{
+    color: #88bc04;
+}
+/* ends comandos segunda nav */
+
 /* stars comandos Novedades */
 .figcaption_text_size{
     font-size: 2rem;
@@ -225,22 +236,19 @@ main section h2{
 .novedades_div--background{
     background-color: #88bc04;
     margin: auto;
-    display: flex;
-    flex-direction: row;
+    padding: 2em;
 }
 #novedades .box{
 	margin: 30px;
 	display: flex;
-	justify-content: space-evenly;
+    flex-direction: row;
 }
 #novedades .box figure{
     text-align: center;
+    width: 50%
 }
-#novedades .box figure img{
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    width: 200px;
-    height: 200px;
+#novedades .box figure iframe{
+    width: 100%;
 }
 
 #novedadess .box figure figcaption{
@@ -257,43 +265,53 @@ main section h2{
 /* ends comandos novedades */
 
 /* starts comandos contacto */
-#contacto .section{
+.section{
     margin: 30px;
-	display: flex;
 }
 
-#contacto article{
+.section article{
     margin-right: 3rem;
     margin-left: 3rem;
 }
-#contacto img{
+.section img{
     width: 300px;
     height: 200px;
 }
-#contacto h2{
+.section h2{
     border-color: #000000;
     border-style: solid;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     border-start-start-radius: 10px;
     border-end-end-radius: 10px;
     margin-left: 0px;
+    color: #0424a4;
 }
-#contacto h4{
-    margin-top: 30px;
+.section h4{
+    margin-top: 2em;
+}
+.section form{
+    width: 60%;
+}
+.section form input{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 /* ends comandos contacto */
 
 /* starts comandos generales footer */
 .footer{
-    margin: auto;
-    padding: 30px 30px 30px 1220px;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 .footer_box--color{
     background-color: #0424a4;
 }
 .footer_icon{
-    width: 30px;
+    width: 3vh;
 }
 /* ends comandos generales footer */
 
@@ -312,7 +330,68 @@ main section h2{
     animation-name: headerAnimation;
     animation-duration: 10s;
     animation-timing-function: linear;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-iteration-count: infinite;
 }
 /* ends animaciones */
+
+/* starts responsive */
+.div--position{
+    grid-area: divNum;
+}
+.nav--position{
+    grid-area: nav1;
+}
+.header--position{
+    grid-area: header1;
+}
+.div--a{
+    grid-area: divA;
+}
+.div--b{
+    grid-area: divB;
+}
+.div--c{
+    grid-area: divC;
+}
+.div--d{
+   grid-area: divD 
+}
+.div--e{
+    grid-area: divE;
+}
+.div--f{
+    grid-area: divF;
+}
+.div--g{
+    grid-area: divG;
+}
+.div--h{
+    grid-area: divH;
+}
+.footer--1{
+   grid-area: foot1; 
+}
+
+#contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(11,auto);
+    grid-template-areas: 
+    "divNum"
+    "nav1"
+    "header1"
+    "divA"
+    "divC"
+    "divD"
+    "divE"
+    "divF"
+    "divG"
+    "divH"
+    "divB"
+    "foot1";
+}
+#contacto div{
+    display: flex;
+}
+/* ends responsive
