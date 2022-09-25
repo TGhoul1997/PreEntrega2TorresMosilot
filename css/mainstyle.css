@@ -239,7 +239,7 @@ main section h2 {
 /* starts comandos servicio varios */
 
 /* stars comandos productos */
-.productos .box {
+#productos .box{
     margin: 20px;
     display: flex;
     justify-content: space-evenly;
